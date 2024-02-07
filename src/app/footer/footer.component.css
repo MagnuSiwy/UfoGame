@@ -1,0 +1,14 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 20px;
+    width: 100vw;
+    text-align: right;
+    background-color: #ffe032;
+    font-size: 15px;
+}
+
+footer small {
+    padding: 2px;
+    margin-right: 20px;
+}

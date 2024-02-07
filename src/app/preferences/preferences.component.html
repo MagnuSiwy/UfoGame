@@ -1,0 +1,25 @@
+<main>
+    <div class="loginForm">
+        <h2>Preferences</h2>
+        <form>
+            <div class="form-group">
+                <label>Number of UFO's:
+                    <br />
+                    <input name="ufoInput" type="number" min="1" max="5" maxlength="1" [(ngModel)]="ufoCount" required>
+                </label>
+            </div>
+            <br />
+            <div class="form-group">
+                <label>Time (seconds):
+                    <br />
+                    <input name="rangeTime" type="range" min="60" max="180" step="60" [(ngModel)]="time" required />
+                </label>
+                <br/>
+                <output name="prefTime" type="number">{{ time }}</output>
+            </div>
+            <div class="form-group">
+                <button type="submit" (click)="setVariables();" routerLink="/game">Accept</button>
+            </div>
+        </form>
+    </div>
+</main>

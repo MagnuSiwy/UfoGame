@@ -1,0 +1,32 @@
+<main>
+    <div class="loginForm">
+        <h2>Register</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="username" id="username" name="username" placeholder="Your username" [(ngModel)]="username" (focusout)="checkUsername()" autocomplete="username" required>
+                <br />
+                <small id="checkUsername">Username already exists!</small>
+            </div>
+            <div class="form-group">
+                <label for="username">Email:</label>
+                <input type="email" class="username" id="email" name="username" placeholder="Your email" [(ngModel)]="email" (focusout)="checkEmail()" autocomplete="email" required>
+                <br />
+                <small id="checkEmail">Check the syntax of the email</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="password" id="password" name="password" [(ngModel)]="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Repeat password:</label>
+                <input type="password" class="password" id="repPassword" name="password" [(ngModel)]="repPassword" (input)="checkPassword()" required>
+                <br />
+                <small id="checkPassword">Invalid password!</small>
+            </div>
+            <div class="form-group">
+                <button type="submit" (click)="OnClick()">Register</button>
+            </div>
+        </form>
+    </div>
+</main>

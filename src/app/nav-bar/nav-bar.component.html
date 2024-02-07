@@ -1,0 +1,28 @@
+<nav>
+    <img src="assets/img/UPM_LOGO.jpg">
+    <i class="text">U.P.M. / UFO Battle</i>
+    <a class="home" routerLink="/">
+        Home <i class="fa-solid fa-house"></i>
+    </a>
+    <a routerLink="/preferences">
+        Preferences <i class="fa-solid fa-gear"></i>
+    </a>
+    <a routerLink="/game">
+        Play <i class="fa-solid fa-play"></i>
+    </a>
+    <a routerLink="/records">
+        Records <i class="fa-solid fa-record-vinyl"></i>
+    </a>
+    <a id="register" class="login" routerLink="/register">
+        Register <i class="fa-solid fa-user"></i>
+    </a>
+    <a id="login" routerLink="/login">
+        Login <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+    <a id="profile" class="login" routerLink="/profile">
+        Profile <i class="fa-solid fa-user"></i>
+    </a>
+    <a id="logout" routerLink="/home" (click)="logout()">
+        Logout <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+</nav>

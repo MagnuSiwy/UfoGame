@@ -1,0 +1,288 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fffbe7;
+}
+
+nav {
+    top: 0px;
+    background-color: #ffe032;
+    margin: 0;
+    padding: 0;
+    min-height: 50px;
+    height: fit-content;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav i.text{
+    float: left;
+    font-size: 24px;
+    font-weight: 100;
+    color: #0404ff;
+    margin-right: auto;
+}
+
+nav img {
+    padding: 2px;
+    float: left;
+    height: 46px;
+    width: auto;
+}
+
+nav a {
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0120bd;
+}
+
+nav a:hover {
+    color: #0404ff;
+    background-color: #ffee8a;
+}
+
+nav a.login {
+    margin-left: auto;
+}
+
+main {
+    top: 50px;
+    margin: auto;
+    min-height: 790px;
+    height: fit-content;
+    width: 100vw;
+    background-color: #fffbe7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    font-size: large;
+}
+
+.loginForm {
+    background-color: #ffee8a;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #0120bd;
+}
+
+.loginForm h2 {
+    margin: 0 0 20px 0;
+}
+
+.form-group {
+    margin: 0 0 20px 0;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+}
+
+.form-group input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#homePhotos img {
+    width: 30vw;
+    height: auto;
+}
+
+#home {
+    margin: 20px;
+}
+
+#home h1 {
+    color: #00126c;
+    font-size: 50px;
+    margin: 20px 0px 5px 70px;
+}
+
+#home h2 {
+    color: #00126c;
+    font-size: x-large;
+    margin: 5px 0px 0px 70px;
+}
+
+#home h3 {
+    color: #00126c;
+    text-align: right;
+    margin: 5px 80px 0px 0px;
+}
+
+#score {
+    position: absolute;
+    min-width: 150px;
+    width: fit-content;
+    min-height: 60px;
+    height: fit-content;
+    background-color: #fbff81;
+    left: 20px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 2px solid #0120bd;
+}
+
+#points {
+    margin: 0;
+}
+
+#timer {
+    position: absolute;
+    min-width: 100px;
+    width: fit-content;
+    min-height: 40px;
+    height: fit-content;
+    background-color: #fbff81;
+    left: 20px;
+    top: 60px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid #0120bd;
+}
+
+#time {
+    margin: 0;
+}
+
+#endGame {
+    min-width: 500px;
+    width: fit-content;
+    min-height: 350px;
+    height: fit-content;
+    text-align: center;
+    position: absolute;
+    background-color: #ffee8a;
+    border-radius: 20px;
+    border: 2px solid #0120bd;
+    z-index: 1;
+    display: none;
+}
+
+#endGame button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#endGame H2 {
+    font-size: 40px;
+}
+
+#endGame H1 {
+    font-size: 40px;
+    animation: rainbow 4s infinite;
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+}
+
+#endGameScore {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#missile {
+    position: absolute;
+    left: 300px;
+    bottom: 10px;
+    height: 70px;
+    width: 40px;
+}
+
+#plane {
+    position: absolute;
+    left: 300px;
+    bottom: 10px;
+    height: 70px;
+    width: 40px;
+}
+
+.ufo {
+    position: absolute;
+    left: 0px;
+    bottom: 550px;
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+
+.responseDIV {
+    background-color: #ffee8a;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #0120bd;
+    text-align: center;
+    margin: 20px;
+}
+
+.responseDIV table {
+    padding: 0 40px 40px 40px;
+}
+
+.responseDIV table th {
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #0404ff;
+}
+
+.responseDIV table td {
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid #0404ff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 20px;
+    width: 100vw;
+    text-align: right;
+    background-color: #ffe032;
+    font-size: 15px;
+}
+
+footer small {
+    padding: 2px;
+    margin-right: 20px;
+}
